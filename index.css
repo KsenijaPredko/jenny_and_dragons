@@ -42,9 +42,6 @@ nav{
   overflow: hidden;
   break-inside: avoid;
   display: inline-block;
-  min-width: 120px;
-  box-sizing: border-box;
-  padding: 0 2.5px;
 }
 
 .image-grid {
@@ -57,14 +54,6 @@ nav{
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-out;
-}
-
-.image-grid:nth-child(odd) {
-  height: 150px;
-}
-
-.image-grid:nth-child(even) {
-  height: 250px;
 }
 
 .image-grid:hover img {
