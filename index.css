@@ -39,9 +39,10 @@ nav{
 
 .image-grid {
   position: relative;
-  overflow: hidden;
   break-inside: avoid;
   display: inline-block;
+  width: 120px; /* Set a fixed width for the image grid */
+  margin-bottom: 5px;
 }
 
 .image-grid {
