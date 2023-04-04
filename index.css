@@ -47,6 +47,7 @@ nav{
 
 .image-grid {
   grid-row-end: span 1;
+  overflow: hidden;
 } 
 
 .image-grid img {
