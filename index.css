@@ -1,0 +1,103 @@
+body {
+    font-family: 'Viaoda Libre', serif;
+    color: black;
+    font-size: medium;
+    font-style: normal;
+}
+ul {
+    margin: 10px 10px 10px 10px;
+    list-style-type: none;
+    padding: 5px 0px 5px 0px;
+}
+ul, li {
+    display: inline;
+    padding: 5px 30px 5px 30px;
+}
+ul li a:link, ul li a:visited {
+    color: black;
+    border-bottom: none;
+    font-weight: bold;
+}
+ul li.selected {
+    /* background-color: #fbff05; */
+}
+
+a {
+    text-decoration: none;
+}
+
+nav{
+  text-align: center;
+  font-size: large;
+  padding: 20px;
+}
+ 
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  grid-auto-rows: auto;
+  grid-gap: 5px;
+}
+
+.image-grid {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-grid {
+  grid-row-end: span 1;
+} 
+
+.image-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.image-grid:hover img {
+  transform: scale(1.05);
+} 
+
+
+
+
+
+
+
+
+
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  grid-auto-rows: auto;
+  grid-gap: 5px;
+}
+
+.image-grid {
+  flex-grow: 1;
+  flex-basis: 0
+  overflow: hidden;
+}
+
+.image-grid {
+  grid-row-end: span 1;
+}
+
+.image-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-out;
+}
+
+.image-grid:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+
