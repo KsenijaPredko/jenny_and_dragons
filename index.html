@@ -22,20 +22,24 @@
         </nav>
     </header>
     <section id="main">
-        <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              var grid = document.querySelector('.grid');
-              var msnry = new Masonry(grid, {
-                itemSelector: '.image-grid',
-                columnWidth: 120, /* Set a fixed width for the columns */
-                gutter: 5,
-                fitWidth: true,
-                transitionDuration: '0.3s'
-              });
+            $(document).ready(function () {
+                $(".justified-gallery").justifiedGallery({
+                    rowHeight: 150,
+                    lastRow: 'center',
+                    margins: 5,
+                    captions: false,
+                    cssAnimation: true,
+                    imagesAnimationDuration: 300
+                })
             });
-          </script>
-        <div class="grid-container grid">
+        </script>
+        <div class="grid-container justified-gallery">
             <div class="image-grid">
                 <a href="../фото на сайт/HTML/html_orange7.html">
                     <img src="../фото на сайт/colours/orange_small/7orange_small.PNG" alt="Asian Girl">
@@ -110,6 +114,7 @@
             <div class="image-grid">
                 <a href="../фото на сайт/HTML/html_lemon_peony.html">
                     <img src="../фото на сайт/colours/orange_small/pinkflowers_ small.PNG" alt="Pink flowers">
+                </a>
             </div>
             <div class="image-grid">
                 <a href="../фото на сайт/HTML/html_nude_3-4.html">
