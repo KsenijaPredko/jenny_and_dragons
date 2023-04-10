@@ -1,16 +1,16 @@
 body {
-    font-family: 'Viaoda Libre', serif;
+    font-family: 'Skellyman';
     color: black;
     font-size: medium;
     font-style: normal;
     text-align: justify;
     margin-right: 10px;
     padding-right: 10px;
+    background-color: ;
 }
 .back {
-  font-family: 'Viaoda Libre', serif;
+  font-family: 'Skellyman';
   color: black;
-  background-color: #d592ea;
   border: none;
   text-align: center;
   align-items: center;
@@ -45,10 +45,9 @@ body {
   margin: 5px 50px 10px 10px;
 }
 .button {
-  font-weight: bold;
-  font-family: 'Viaoda Libre', serif;
+  font-family: 'CutOutOFFont';
   margin: auto;
-  background-color: #2acfd5;
+  background-color: #ff69b4;
   border: none;
   color: rgb(32, 32, 32);
   text-align: center;
@@ -62,10 +61,10 @@ body {
   border-radius: 10px;
 }
 .button:hover {
-  background-color: #0389cd;
+  background-color: #ff3d9e;
 }
 .button:active {
-  background-color: #0071bd;
+  background-color: #f71385;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
