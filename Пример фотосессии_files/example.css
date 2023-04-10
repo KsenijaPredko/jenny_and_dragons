@@ -1,38 +1,23 @@
 body {
-    font-family: 'Skellyman';
+    font-family: 'Viaoda Libre', serif;
     color: black;
     font-size: medium;
     font-style: normal;
 }
-ul {
-    margin: 10px 10px 10px 10px;
-    list-style-type: none;
-    padding: 5px 0px 5px 0px;
+#mainPh {
+  width: 12%;
+  float: left;
+  margin: 5px 50px 10px 10px;
 }
-ul, li {
-    display: inline;
-    padding: 5px 30px 5px 30px;
+.button-wrapper {
+  display: flex;
+  align-items: center;
 }
-ul li a:link, ul li a:visited {
-    color: black;
-    border-bottom: none;
-    font-weight: bold;
+.button {
+  margin: auto;
+  background-color: #e599f6;
 }
-ul li.selected {
-    /* background-color: #fbff05; */
-}
-
-a {
-    text-decoration: none;
-}
-
-nav{
-  text-align: center;
-  font-size: large;
-  padding: 20px;
-}
-
-.grid-container {
+  .grid-container {
   display: grid;
   grid-gap: 5px;
 }
@@ -41,7 +26,7 @@ nav{
   position: relative;
   break-inside: avoid;
   display: inline-block;
-  width: 120px; /* Set a fixed width for the image grid */
+  width: 120px;
   margin-bottom: 5px;
 }
 
