@@ -3,21 +3,86 @@ body {
     color: black;
     font-size: medium;
     font-style: normal;
+    text-align: justify;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.back {
+  font-family: 'Viaoda Libre', serif;
+  color: black;
+  background-color: #d592ea;
+  border: none;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.no-underline {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.back:hover {
+  background-color: #ba67ee;
+}
+.back:active {
+  background-color: #ab3cd0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.back:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 #mainPh {
   width: 12%;
   float: left;
   margin: 5px 50px 10px 10px;
 }
+.button {
+  font-weight: bold;
+  font-family: 'Viaoda Libre', serif;
+  margin: auto;
+  background-color: #2acfd5;
+  border: none;
+  color: rgb(32, 32, 32);
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #0389cd;
+}
+.button:active {
+  background-color: #0071bd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
 .button-wrapper {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
-.button {
-  margin: auto;
-  background-color: #e599f6;
+#photo {
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
 }
-  .grid-container {
+.grid-container {
   display: grid;
   grid-gap: 5px;
 }
@@ -26,8 +91,8 @@ body {
   position: relative;
   break-inside: avoid;
   display: inline-block;
-  width: 120px;
-  margin-bottom: 5px;
+  width: 200px; /* Set a fixed width for the image grid */
+  margin: 10px;
 }
 
 .image-grid {
@@ -46,43 +111,6 @@ body {
 .image-grid:hover img {
   transform: scale(1.05);
 } 
-
-
-
-
-
-
-
-
-
-
-/* .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
-  grid-auto-rows: auto;
-  grid-gap: 5px;
-}
-
-.image-grid {
-  flex-grow: 1;
-  flex-basis: 0
-  overflow: hidden;
-}
-
-.image-grid {
-  grid-row-end: span 1;
-}
-
-.image-grid img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-out;
-}
-
-.image-grid:hover img {
-  transform: scale(1.05);
-}
 
 
 

@@ -31,8 +31,8 @@ nav{
   font-size: large;
   padding: 20px;
 }
- 
-  .grid-container {
+
+.grid-container {
   display: grid;
   grid-gap: 5px;
 }
