@@ -11,6 +11,7 @@ body {
 .back {
   font-family: 'Skellyman';
   color: black;
+  background-color: #ffc0cd;
   border: none;
   text-align: center;
   align-items: center;
@@ -28,10 +29,10 @@ body {
   font-weight: bold;
 }
 .back:hover {
-  background-color: #ba67ee;
+  background-color: #ff97ac;
 }
 .back:active {
-  background-color: #ab3cd0;
+  background-color: #fe728e;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -40,7 +41,7 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 #mainPh {
-  width: 12%;
+  width: 14%;
   float: left;
   margin: 5px 50px 10px 10px;
 }
@@ -79,7 +80,7 @@ body {
 #photo {
   margin-top: 10px;
   padding-top: 10px;
-  text-align: center;
+  margin-left: 7%;
 }
 .grid-container {
   display: grid;
@@ -90,6 +91,7 @@ body {
   position: relative;
   break-inside: avoid;
   display: inline-block;
+  text-align: center;
   width: 200px; /* Set a fixed width for the image grid */
   margin: 10px;
 }
