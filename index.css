@@ -13,23 +13,44 @@ ul, li {
     display: inline;
     padding: 5px 30px 5px 30px;
 }
-ul li a:link, ul li a:visited {
-    color: black;
-    border-bottom: none;
-    font-weight: bold;
-}
-ul li.selected {
-    /* background-color: #fbff05; */
-}
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 nav{
   text-align: center;
   font-size: large;
   padding: 20px;
+}
+
+.back {
+  font-family: 'Skellyman';
+  color: black;
+  background-color: #ffc0cd;
+  border: none;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.back:hover {
+  background-color: #ff97ac;
+}
+.back:active {
+  background-color: #fe728e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.back:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .grid-container {
