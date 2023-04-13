@@ -41,18 +41,48 @@
             href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
         <script>
             $(document).ready(function () {
-                var rowHeight = 150;
-                if ($(window).width() < 400) {
-                    rowHeight = 2000
+                var screenWidth = $(window).width();
+                if (screenWidth < 768) {
+                    var columns = 4;
+                    var margin = 5;
+                    var containerWidth = $('.justified-gallery').width();
+                    var imageWidth = (containerWidth - (columns - 1) * margin) / columns;
+                    var rowHeight = 150;
+                    if (imageWidth > rowHeight) {
+                        rowHeight = imageWidth;
+                    }
+                    var maxRowHeight = rowHeight + margin;
+
+
+                    columns = 2;
+                    imageWidth = (containerWidth - (columns - 1) * margin) / columns;
+                    if (imageWidth > rowHeight) {
+                        rowHeight = imageWidth;
+                    }
+                    maxRowHeight = rowHeight + margin;
+                    $('.justified-gallery').justifiedGallery({
+                        rowHeight: rowHeight,
+                        maxRowHeight: maxRowHeight,
+                        lastRow: 'center',
+                        margins: margin,
+                        captions: false,
+                        cssAnimation: true,
+                        imagesAnimationDuration: 300,
+                        fixedHeight: true,
+                        justifyThreshold: 0.5,
+                        waitThumbnailsLoad: true,
+                        lazyLoad: true
+                    });
+                } else {
+                    $(".justified-gallery").justifiedGallery({
+                        rowHeight: 150,
+                        lastRow: 'center',
+                        margins: 5,
+                        captions: false,
+                        cssAnimation: true,
+                        imagesAnimationDuration: 300
+                    });
                 }
-                $(".justified-gallery").justifiedGallery({
-                    rowHeight: rowHeight,
-                    lastRow: 'center',
-                    margins: 5,
-                    captions: false,
-                    cssAnimation: true,
-                    imagesAnimationDuration: 300
-                })
             });
 
         </script>
