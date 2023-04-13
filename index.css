@@ -4,7 +4,7 @@ body {
     font-size: medium;
     font-style: normal;
 }
-ul {
+ ul {   
     margin: 10px 10px 10px 10px;
     list-style-type: none;
     padding: 5px 0px 5px 0px;
@@ -12,25 +12,22 @@ ul {
 ul, li {
     display: inline;
     padding: 5px 30px 5px 30px;
-}
-
+} 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-nav{
+nav{ 
+  display: inline;
   text-align: center;
-  font-size: large;
-  padding: 20px;
 }
-
-.back {
+ .nav-item { 
   font-family: 'Skellyman';
   color: black;
-  background-color: #ffc0cd;
-  border: none;
   text-align: center;
+  background-color: #ffc0cd;
+  border: none; 
+  text-align: center; 
   align-items: center;
   text-decoration: none;
   display: inline-block;
@@ -40,15 +37,15 @@ nav{
   padding: 10px;
   border-radius: 10px;
 }
-.back:hover {
+.nav-item:hover {
   background-color: #ff97ac;
 }
-.back:active {
+.nav-item:active {
   background-color: #fe728e;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.back:focus {
+.nav-item:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }

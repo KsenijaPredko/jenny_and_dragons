@@ -4,8 +4,8 @@ body {
     font-size: medium;
     font-style: normal;
     text-align: justify;
-    margin-right: 10px;
-    padding-right: 10px;
+    margin: 15px;
+    padding: 15px;
     background-color: ;
 }
 .back {
@@ -75,7 +75,7 @@ body {
 }
 .button-wrapper {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 #photo {
   margin-top: 10px;
@@ -92,7 +92,7 @@ body {
   break-inside: avoid;
   display: inline-block;
   text-align: center;
-  width: 200px; /* Set a fixed width for the image grid */
+  width: 250px; /* Set a fixed width for the image grid */
   margin: 10px;
 }
 
