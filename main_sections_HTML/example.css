@@ -88,6 +88,7 @@ margin: auto;
 .grid-container {
   display: grid;
   grid-gap: 5px;
+  text-align: center;
 }
 
 .image-grid {
