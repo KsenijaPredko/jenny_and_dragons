@@ -41,9 +41,14 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 #mainPh {
-  width: 14%;
+  width: 160px;
   float: left;
-  margin: 5px 50px 10px 10px;
+  margin: 10px;
+}
+@media (max-width:700px){
+  body {
+    font-size: 11px;
+}
 }
 .button {
   font-family: 'CutOutOFFont';
@@ -78,9 +83,7 @@ body {
   align-items: center;
 }
 #photo {
-  margin-top: 10px;
-  padding-top: 10px;
-  margin-left: 7%;
+margin: auto;
 }
 .grid-container {
   display: grid;
@@ -92,7 +95,7 @@ body {
   break-inside: avoid;
   display: inline-block;
   text-align: center;
-  width: 250px; /* Set a fixed width for the image grid */
+  width: 300px; 
   margin: 10px;
 }
 
