@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример фотосессии</title>
     <link type="text/css" rel="stylesheet" href="../main_sections_HTML/example.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
     @font-face {
     font-family: 'Skellyman';
@@ -28,11 +29,21 @@
     </style>
 </head>
 <body>
-    <div> 
-        <button class="back"> <a class="no-underline" href="../index.html"> Главная </button> </a> 
-    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li> <button class="nav-item"> <a href="index.html"> Главная </a> </button> </li>
+            <li> <button class="nav-item"> <a href="main_sections_HTML/about_jenny.html"> Обо мне </a> </button></li>
+            <li> <button class="nav-item"> <a href="main_sections_HTML/price.html"> Стоимость услуг </a> </button></li>
+            <li> <button class="nav-item"> <a href="https://t.me/JennyJenny17"> Записаться на фотосессию </a> </button> </li>
+            <li> <button class="nav-item"> <a href="main_sections_HTML/examples.html"> Пример фотосессии </a> </button> </li>
+        </ul>
+    </nav>
     <section> 
-        <img id="mainPh" src="../colours/nude/manicurist-2.JPG">
+        <!-- <img id="mainPh" src="../colours/nude/manicurist-2.JPG"> -->
         <div class="text">
         <p> Когда я увидела Настю, то была в восторге и сразу поняла, какие фотки хочу сделать! 
             Настя — мастер маникюра, и сделала ремонт в студии своими руками. Поэтому моей целью 
@@ -50,118 +61,139 @@
         </div>
     </section>
     <section id="photo">
-    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+        <script>
+            $(document).ready(function () {
+                $('.justified-gallery').justifiedGallery({
+                    rowHeight: 150,
+                    lastRow: 'center',
+                    margins: 2,
+                    captions: false,
+                    cssAnimation: true,
+                    imagesAnimationDuration: 300,
+                    fixedHeight: true,
+                    justifyThreshold: 0.5,
+                    waitThumbnailsLoad: true,
+                    lazyLoad: true
+                });
+            }); 
+        </script>
+    <!-- <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
         <script id="photo">
             document.addEventListener('DOMContentLoaded', function() {
               var grid = document.querySelector('.grid');
               var msnry = new Masonry(grid, {
                 itemSelector: '.image-grid',
-                columnWidth: 120, /* Set a fixed width for the columns */
+                columnWidth: 120,
                 gutter: 5,
                 fitWidth: true,
                 transitionDuration: '0.3s'
               });
             });
-          </script>
-    <div class="grid-container grid">
+          </script> -->
+    <div class="grid-container justified-gallery">
         <div class="image-grid">
-            <a href="..">
-                <img src="../nail artist/IMG_0801.JPG" alt="..">
+            <a href="../html_for_example/html_nail_artist_1.html">
+                <img src="../nail_artist/IMG_0801.JPG" alt="Nail artist">
+            </a>
+        </div>
+        <div class="image-grid">
+            <a href="../html_for_example/html_nail_artist_2.html">
+                <img src="../nail_artist/IMG_0802.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0802.JPG" alt="..">
+                <img src="../nail_artist/IMG_0803.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0803.JPG" alt="..">
+                <img src="../nail_artist/IMG_0804.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0804.JPG" alt="..">
+                <img src="../nail_artist/IMG_0805.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0805.JPG" alt="..">
+                <img src="../nail_artist/IMG_0806.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0806.JPG" alt="..">
+                <img src="../nail_artist/IMG_0807.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0807.JPG" alt="..">
+                <img src="../nail_artist/IMG_0808.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0808.JPG" alt="..">
+                <img src="../nail_artist/IMG_0809 .JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0809 .JPG" alt="..">
+                <img src="../nail_artist/IMG_0810.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0810.JPG" alt="..">
+                <img src="../nail_artist/IMG_0811.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0811.JPG" alt="..">
+                <img src="../nail_artist/IMG_0812.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0812.JPG" alt="..">
+                <img src="../nail_artist/IMG_0813.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0813.JPG" alt="..">
+                <img src="../nail_artist/IMG_0814.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0814.JPG" alt="..">
+                <img src="../nail_artist/IMG_0815.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0815.JPG" alt="..">
+                <img src="../nail_artist/IMG_0816.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0816.JPG" alt="..">
+                <img src="../nail_artist/IMG_0817.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0817.JPG" alt="..">
+                <img src="../nail_artist/IMG_0818.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0818.JPG" alt="..">
+                <img src="../nail_artist/IMG_0819.JPG" alt="Nail artist">
             </a>
         </div>
         <div class="image-grid">
             <a href="..">
-                <img src="../nail artist/IMG_0819.JPG" alt="..">
-            </a>
-        </div>
-        <div class="image-grid">
-            <a href="..">
-                <img src="../nail artist/IMG_0800.JPG" alt="..">
+                <img src="../nail_artist/IMG_0800.JPG" alt="Nail artist">
             </a>
         </div>
     </div>
