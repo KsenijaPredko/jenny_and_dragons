@@ -86,13 +86,13 @@ nav ul li a {
 }
 
 
-@media (max-width: 952px) {
+@media (max-device-width: 952px) {
   nav ul li a {
     font-size: 16px;
   }
 }
 
-@media (max-width: 858px) {
+@media (max-device-width: 858px) {
   .checkbtn {
     display: block;
   }
